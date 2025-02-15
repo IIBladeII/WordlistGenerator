@@ -44,7 +44,7 @@ A modern and intuitive wordlist generator built with HTML, CSS, and vanilla Java
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/wordlist-generator.git
+git clone https://github.com/IIBladeII/WordlistGenerator.git
 ```
 
 2. Navigate to the directory:
