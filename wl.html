@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordlist Generator</title>
+
+    <link rel="stylesheet" href="/wl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <h1>Wordlist Generator</h1>
+        <form id="wordlistForm">
+            <label for="characters">Enter characters:</label>
+            <input type="text" id="characters" name="characters" placeholder="Ex: abcdefgh">
+
+            <label for="wordLength">Word length:</label>
+            <input type="number" id="wordLength" name="wordLength" min="1" max="20" placeholder="Ex: 8">
+
+            <label for="numbers">Enter numbers:</label>
+            <input type="text" id="numbers" name="numbers" placeholder="Ex: 0123456789">
+
+            <label for="specialChars">Enter special characters:</label>
+            <input type="text" id="specialChars" name="specialChars" placeholder="Ex: @#$%&*">
+
+            <div class="pattern-options">
+                <h3>Common Patterns</h3>
+                <label>
+                    <input type="checkbox" id="commonPatterns">
+                    Include common patterns
+                </label>
+                <select id="patternType" disabled>
+                    <option value="leet">Leetspeak (a->4, e->3, etc)</option>
+                    <option value="capitalize">First letter uppercase</option>
+                    <option value="suffix">Add numbers at the end</option>
+                    <option value="prefix">Add numbers at the beginning</option>
+                </select>
+            </div>
+
+            <progress id="progressBar" value="0" max="100"></progress>
+
+            <button type="submit">Generate Wordlist</button>
+        </form>
+
+        <div id="result">
+            <h2>Generated Wordlist</h2>
+            <textarea id="wordlistOutput" rows="10" readonly></textarea>
+            <button id="downloadBtn" disabled>Download Wordlist</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pedro-Dev</h3>
+                <p>Full Stack Web Developer passionate about creating innovative and intuitive web solutions.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/IIBladeII" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-riccio" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://discordia-server.ddns.net/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+            
+          
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:pedroworkdev@gmail.com">pedroworkdev@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bahia, Brazil</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pedro-Dev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/wl.js"></script>
+</body>
+</html>
