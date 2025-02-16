@@ -1,5 +1,9 @@
 # Wordlist Generator
 
+<p>
+  <img src="https://i.imgur.com/vZZa4ce.png" width="400" alt="Preview do Gerador de Senhas">
+</p>
+
 A modern and intuitive wordlist generator built with HTML, CSS, and vanilla JavaScript. This tool allows you to create custom wordlists with different patterns and characters for various purposes.
 
 ## ✨ Features
